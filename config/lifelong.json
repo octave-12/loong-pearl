@@ -1,0 +1,27 @@
+{
+  "field_dim": 512,
+  "hidden_dim": 512,
+  "atom_dim": 32,
+  "initial_atoms": 500,
+  "device": "cpu",
+  "use_amp": false,
+  "dt": 0.1,
+  
+  "pmi_batch_size": 5000,
+  "pmi_max_pairs": 50000,
+  "pmi_window_size": 5,
+  "pmi_min_count": 5,
+  "pmi_threshold": 1.5,
+  
+  "checkpoint_interval": 10000,
+  "gc_interval": 1000,
+  "log_interval": 100,
+  "health_check_interval": 500,
+  "progress_interval": 100,
+  
+  "max_restart_attempts": 5,
+  "restart_delay": 10,
+  
+  "webhook_url": null,
+  "enable_alerts": false
+}

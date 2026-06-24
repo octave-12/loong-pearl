@@ -1,0 +1,24 @@
+[Unit]
+Description=Four Generation Dragon Pearl - Lifelong Learning System
+After=network.target
+
+[Service]
+Type=simple
+User=octave
+WorkingDirectory=/mnt/d/soso/projects/Loong-pearl
+ExecStart=/usr/bin/python3 -u /mnt/d/soso/projects/Loong-pearl/experiments/run_lifelong_production.py /mnt/d/soso/projects/Loong-pearl/config/lifelong.json
+Restart=always
+RestartSec=10
+StandardOutput=append:/mnt/d/soso/projects/Loong-pearl/outputs/lifelong_console.log
+StandardError=append:/mnt/d/soso/projects/Loong-pearl/outputs/lifelong_error.log
+
+# 资源限制
+LimitNOFILE=65536
+MemoryMax=14G
+
+# 优雅退出
+KillSignal=SIGTERM
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,42 @@
+field_dim: 4096
+hidden_dim: 4096
+atom_dim: 128
+initial_atoms: 5000
+
+tau_max: 1.0
+noise_std: 0.01
+state_clip: 5.0
+dt: 0.1
+
+learning_rate: 1.0e-5
+decay_rate: 1.0e-6
+activation_threshold: 0.7
+dormancy_threshold: 1000
+weight_prune_threshold: 1.0e-4
+max_density: 0.05
+
+num_bins: 64
+entropy_low_threshold: 2.0
+entropy_high_threshold: 5.0
+exploration_noise_std: 0.05
+max_entropy_history: 10000
+
+checkpoint_interval: 1000
+atom_evolve_interval: 2000
+max_steps: 100000
+projection_update_interval: 10
+projection_top_k: 5
+
+corpus_path: data/corpus.txt
+pmi_window_size: 5
+pmi_min_count: 10
+pmi_threshold: 2.0
+
+max_idiom_atoms: 1000
+knowledge_data_dir: data/raw
+
+use_fp16: true
+use_amp: true
+use_cuda_graph: false
+use_igraph: false
+device: auto
