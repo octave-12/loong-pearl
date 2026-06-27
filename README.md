@@ -1,5 +1,8 @@
 # 四代龙珠 (Loong-pearl) - 连续神经场机
 
+> 📚 **龙珠进化全貌**: 本系统为四代龙珠，是实验前沿项目。
+> 完整进化历程: [`一代龙神.md`](../一代龙神.md) → [`二代龙珠.md`](../二代龙珠.md) → [`三代龙珠.md`](../三代龙珠.md) → **四代龙珠 (本项目)**
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 2.1](https://img.shields.io/badge/pytorch-2.1-orange.svg)](https://pytorch.org/)
